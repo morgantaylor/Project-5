@@ -1,0 +1,79 @@
+// =====================
+// Header
+// =====================
+
+
+.header {
+	@extend %flex-column-default;
+
+    padding: 20px;
+
+    @media #{$media-large} {
+    	-webkit-box-orient: horizontal;
+	    -webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+    }
+}
+
+.logo {
+	@extend %text-center;
+	
+    @media #{$media-large} {
+        font-size: $font-md;
+        max-width: 204px;
+        width: 100%;
+        margin-right: auto;
+    }
+}
+
+.main--nav {
+	@extend %flex-column-default;
+
+	width:100%;
+	justify-content:center;
+	max-width:768px;
+	margin-bottom:30px;
+	
+	@media #{$media-narrow} {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		margin: 0 auto;
+	}
+
+	@media #{$media-large} {
+		max-width: 395px;
+		margin:0;
+    	justify-content: space-between;
+
+	}
+
+	&--item {
+		@extend %text-center;
+		@extend %uppercase;
+		
+		display:block;
+		margin: 10px 20px;
+	    background-color: $white;
+
+	    @media #{$media-narrow} {
+	    	display: inline-block;
+	        background-color: $light-white;
+	    }
+
+	    @media #{$media-large} {
+		    margin: 0;
+	    }
+	}
+
+	&--item a {
+		display: block;
+		padding: 20px;
+
+		@media #{$media-narrow} {
+			background-color: $light-white;
+		}
+	}
+}

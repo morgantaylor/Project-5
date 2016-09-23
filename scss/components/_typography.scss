@@ -1,0 +1,75 @@
+// =====================
+// Typography
+// =====================
+
+body {
+	@include text(10px, 1.2, 400, $black);
+	font-family: $arial;
+}
+
+.heading {
+	@include text($font-md, $weight: 700, $color: $dark-gray);
+	font-family: $gotham;
+    @extend %text-center;
+    @extend %uppercase;
+
+    padding: 40px 0;
+}
+
+.logo {
+	@include text($font-lg, $weight:700, $color: $dark-gray);
+	font-family: $gotham;
+}
+
+.main--nav--item {
+	@include text($font-sm, $weight:600, $color: $dark-gray);
+	font-family: $helvetica;
+}
+
+.about {
+	@include text($font-md, 1.2, 200, $color: $med-gray);
+	font-family: $helvetica;
+
+	@media #{$media-narrow} {
+		font-size: $font-sm;
+	}
+}
+
+.card--heading {
+	@include text($font-md, $weight:600, $color: $dark-gray);
+	font-family: $gotham;
+}
+
+.card--description {
+	@include text($font-sm, 1.2, 200, $dark-gray);
+	font-family: $helvetica;
+}
+
+.skills--item {
+	@include text($font-sm, 1.2, 400, $dark-gray);
+	font-family: $arial;
+}
+
+.contact {
+	span {
+		@include text($font-xs, 1.2, 600, $dark-gray);
+		font-family: $helvetica;
+	}
+}
+
+.footer--logo {
+	@include text($font-md, $weight: 700, $color: $dark-gray);
+	font-family: $gotham;
+}
+
+.footer--nav--top {
+	@include text($font-sm, $weight: 700, $color: $dark-gray);
+	font-family: $gotham;
+}
+
+.footer--nav--item {
+	@include text($font-sm, $weight: 700, $color: $dark-gray);
+	font-family: $gotham;
+}
+
+

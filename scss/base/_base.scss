@@ -1,0 +1,41 @@
+// =====================
+// Base Styles
+// =====================
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Gill Sans","Gill Sans MT","Myriad Pro","DejaVu Sans Condensed",Helvetica,Arial,sans-serif;
+  color: #4a4a4a;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+l,li {
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: none;
+  position: relative;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul,li,h1,h2,h3,p {
+  margin: 0;
+  padding: 0;
+}

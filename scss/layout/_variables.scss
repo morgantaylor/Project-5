@@ -1,0 +1,36 @@
+// ==================
+// Variables
+// ==================
+
+
+// Descriptive Colors
+
+$white        :     #ffffff;
+$light-white  :     #fafafa;
+$med-white    :     #ededed;
+$gray         :     #cccccc;
+$med-gray     :     #7e7e7e;
+$dark-gray    :     #4a4a4a;
+$black        :     #000000;
+
+$blue         :     #4ca6ff;
+$orange       :     #FFA500;
+
+// Fonts
+
+$sans-serif   :     sans-serif;
+$arial        :     Arial, $sans-serif;
+$helvetica    :     "Helvetica Neue", Helvetica, Arial, $sans-serif;
+$gotham       :     Gotham, "Helvetica Neue", Helvetica, Arial, $sans-serif;
+
+// Font Sizes
+
+$font-lg      :    3em;
+$font-md      :    2em;
+$font-sm      :    1.5em;
+$font-xs      :    1em;
+
+// Media Breakpoints
+
+$media-narrow :    '(min-width: 769px)';
+$media-large  :    '(min-width: 1024px)';
