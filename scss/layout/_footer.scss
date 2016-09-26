@@ -3,14 +3,8 @@
 // =====================
 
 .footer {
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    @extend %flex-row;
+
     justify-content:space-between;
     align-items: center;
     
@@ -33,7 +27,12 @@
 }
 
 #footer--nav--mobile {
-    @media #{$media-narrow} {
+    @include tablet {
+        height:0;
+        display: none;
+    }
+    
+    @include desktop {
         height:0;
         display: none;
     }
@@ -43,21 +42,20 @@
     display: none;
     height:0;
 
-    @media #{$media-narrow} {
+    @include tablet {
+        display:block;
+        height: 60px;
+    }
+
+    @include desktop {
         display:block;
         height: 60px;
     }
 }
 
 .footer--inner {
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    @extend %flex-row;
+
     justify-content: space-between;
     align-items:center;
 

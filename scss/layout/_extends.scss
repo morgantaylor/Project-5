@@ -28,6 +28,20 @@
     flex-wrap: nowrap;
 }
 
+// Flex Container Horizontal Row
+%flex-row {
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
 // Margin Centered
 %margin-center {
 	margin:0 auto;

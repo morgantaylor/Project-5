@@ -30,7 +30,11 @@ body {
 	@include text($font-md, 1.2, 200, $color: $med-gray);
 	font-family: $helvetica;
 
-	@media #{$media-narrow} {
+	@include tablet {
+		font-size: $font-sm;
+	}
+
+	@include desktop {
 		font-size: $font-sm;
 	}
 }

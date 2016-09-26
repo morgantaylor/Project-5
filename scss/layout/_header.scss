@@ -8,18 +8,20 @@
 
     padding: 20px;
 
-    @media #{$media-large} {
-    	-webkit-box-orient: horizontal;
-	    -webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	    flex-direction: row;
+    @include desktop {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
     }
 }
 
 .logo {
 	@extend %text-center;
 	
-    @media #{$media-large} {
+    @include desktop {
         font-size: $font-md;
         max-width: 204px;
         width: 100%;
@@ -35,19 +37,29 @@
 	max-width:768px;
 	margin-bottom:30px;
 	
-	@media #{$media-narrow} {
+	@include tablet {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: row;
 		flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+
 		margin: 0 auto;
 	}
 
-	@media #{$media-large} {
-		max-width: 395px;
-		margin:0;
-    	justify-content: space-between;
+	@include desktop {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 
+		justify-content: space-between;
+
+		max-width: 395px;
+		margin-left: auto;
 	}
 
 	&--item {
@@ -58,12 +70,14 @@
 		margin: 10px 20px;
 	    background-color: $white;
 
-	    @media #{$media-narrow} {
+	    @include tablet {
 	    	display: inline-block;
 	        background-color: $light-white;
 	    }
 
-	    @media #{$media-large} {
+	    @include desktop {
+		    display: inline-block;
+	        background-color: $light-white;
 		    margin: 0;
 	    }
 	}
@@ -72,8 +86,13 @@
 		display: block;
 		padding: 20px;
 
-		@media #{$media-narrow} {
+		@include tablet {
 			background-color: $light-white;
+		}
+
+		@include desktop {
+			background-color: $light-white;
+			padding:0;
 		}
 	}
 }
